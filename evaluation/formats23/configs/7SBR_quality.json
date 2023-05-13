@@ -1,0 +1,349 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 4
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 5
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 6
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 7
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 8
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 9
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/7SBR.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "t<=wcetC50"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "t<=wcetC150"
+                },
+                {
+                    "location_id": "id4",
+                    "clock_constraint": "t<=wcetC150"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id0",
+                    "clock_constraint": "t>bcetC50"
+                },
+                {
+                    "source_id": "id4",
+                    "target_id": "id3",
+                    "clock_constraint": "t>bcetC150"
+                },
+                {
+                    "source_id": "id7",
+                    "target_id": "id6",
+                    "clock_constraint": "t>bcetC200"
+                }
+            ],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/7SBR_quality.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/7SBR_quality.stats.json"
+    },
+    "debug": false
+}

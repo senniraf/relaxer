@@ -1,0 +1,39 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/0db.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "z <= 0"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x <= 2"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "y <= 1"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/0db.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/0db.stats.json"
+    },
+    "debug": true,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/PM_all_good2.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id33",
+                    "clock_constraint": "x<Amaxwait"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id27",
+                    "clock_constraint": "t<=TVRP"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                },
+                {
+                    "location_id": "id16",
+                    "clock_constraint": "t<=TPVARP"
+                },
+                {
+                    "location_id": "id18",
+                    "clock_constraint": "t<=TPVAB"
+                },
+                {
+                    "location_id": "id32",
+                    "clock_constraint": "x<Vmaxwait"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id2",
+                    "target_id": "id1",
+                    "clock_constraint": "clk<TURI"
+                }
+            ],
+            "depth": 6
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/PM_all_good2.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/PM_all_good2.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

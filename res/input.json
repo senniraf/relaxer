@@ -1,0 +1,124 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/Double-Path-3-relax.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "c <= 1"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "d <= 2"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id0",
+                    "target_id": "id2",
+                    "clock_constraint": "a >= 2"
+                },
+                {
+                    "source_id": "id0",
+                    "target_id": "id1",
+                    "clock_constraint": "a >= 1"
+                }
+            ],
+            "depth": 10
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/Single-Path-With-Error-State.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x <= 3"
+                },
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x <= 1"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id2",
+                    "target_id": "id1",
+                    "clock_constraint": "x > 5"
+                }
+            ],
+            "depth": 10
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/Disjunctive-Property.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "a <= 3"
+                },
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "b <= 5"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 10
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/0db.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "z <= 0"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x <= 2"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "y <= 1"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 10
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1state.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x <= 3"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/output.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

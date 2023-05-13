@@ -1,0 +1,125 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 4
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 5
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 6
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 7
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 8
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 9
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id19",
+                    "clock_constraint": "time<=60"
+                }
+            ],
+            "guard_relaxations": [],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/4viking_quality.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/4viking_quality.stats.json"
+    },
+    "debug": false
+}

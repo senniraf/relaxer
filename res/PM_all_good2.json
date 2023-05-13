@@ -1,0 +1,25 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/PM_all_good2.xml"
+            },
+            "relax_all": true,
+            "depth": 4
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/PM_all_good2.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/PM_all_good2.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

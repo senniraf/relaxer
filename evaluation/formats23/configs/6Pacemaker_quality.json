@@ -1,0 +1,181 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 4
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 5
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 6
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 7
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 8
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 9
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/6Pacemaker.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/6Pacemaker_quality.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/6Pacemaker_quality.stats.json"
+    },
+    "debug": false
+}

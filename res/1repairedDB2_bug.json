@@ -1,0 +1,25 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/1repairedDB2_bug.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/1repairedDB2_bug.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

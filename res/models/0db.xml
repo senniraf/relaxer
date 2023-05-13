@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+clock x;
+clock y;
+clock z;
+chan req;
+chan ser;</declaration>
+	<template>
+		<name x="5" y="5">dbServer</name>
+		<declaration>// Place local declarations here.
+</declaration>
+		<location id="id0" x="-1776" y="-1343">
+			<name x="-1759" y="-1368">reqCreate</name>
+		</location>
+		<location id="id1" x="-1666" y="-1343">
+			<name x="-1658" y="-1369">timeout</name>
+			<urgent/>
+		</location>
+		<location id="id2" x="-1776" y="-1402">
+			<name x="-1767" y="-1428">initial</name>
+		</location>
+		<location id="id3" x="-1776" y="-1173">
+			<name x="-1759" y="-1198">serReceiving</name>
+			<label kind="invariant" x="-1776" y="-1156">z &lt;= 0</label>
+		</location>
+		<location id="id4" x="-1776" y="-1258">
+			<name x="-1759" y="-1283">reqSent</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-1887" y="-1275">z &gt;=1</label>
+			<nail x="-1844" y="-1215"/>
+			<nail x="-1844" y="-1402"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id2"/>
+			<nail x="-1666" y="-1402"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id4"/>
+			<label kind="synchronisation" x="-1810" y="-1317">req!</label>
+			<label kind="assignment" x="-1810" y="-1300">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-1657" y="-1241">z==2</label>
+			<nail x="-1666" y="-1173"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-1810" y="-1232">ser?</label>
+		</transition>
+	</template>
+	<template>
+		<name>db</name>
+		<location id="id5" x="-8551" y="-8415">
+			<name x="-8534" y="-8432">reqReceived</name>
+			<label kind="invariant" x="-8534" y="-8415">x&lt;=2</label>
+		</location>
+		<location id="id6" x="-8551" y="-8330">
+			<name x="-8534" y="-8347">reqProcessing</name>
+			<label kind="invariant" x="-8534" y="-8330">y &lt;= 1</label>
+		</location>
+		<location id="id7" x="-8551" y="-8474">
+			<name x="-8534" y="-8499">reqAwaiting</name>
+		</location>
+		<init ref="id7"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-8542" y="-8389">x&gt;=1</label>
+			<label kind="assignment" x="-8542" y="-8372">y:=0</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="-8542" y="-8457">req?</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id7"/>
+			<label kind="guard" x="-8644" y="-8406">y&gt;=1</label>
+			<label kind="synchronisation" x="-8636" y="-8423">ser!</label>
+			<label kind="assignment" x="-8644" y="-8389">z:=0</label>
+			<nail x="-8602" y="-8355"/>
+			<nail x="-8602" y="-8474"/>
+		</transition>
+	</template>
+	<system>// Place
+//Process = Template();
+
+// List one or more processes to be composed into a system.
+system dbServer, db;</system>
+	<queries>
+		<query>
+			<formula>A[] not dbServer.serReceiving or (x &lt;= 4)
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

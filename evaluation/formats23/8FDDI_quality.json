@@ -1,0 +1,343 @@
+[
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:17.444510+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 3,
+        "supported_solution": false,
+        "solution": [
+            [
+                "inf",
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ],
+            [
+                "inf",
+                0.0,
+                100.0,
+                20.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:18.358786+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 4,
+        "supported_solution": false,
+        "solution": [
+            [
+                "inf",
+                20.0,
+                99.9,
+                0.0,
+                0.0
+            ],
+            [
+                "inf",
+                20.0,
+                79.9,
+                0.0,
+                "inf"
+            ],
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:19.338431+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 5,
+        "supported_solution": false,
+        "solution": [
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:20.400791+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 6,
+        "supported_solution": false,
+        "solution": [
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:21.642325+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 7,
+        "supported_solution": false,
+        "solution": [
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:23.021004+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 8,
+        "supported_solution": false,
+        "solution": [
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:24.740593+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 9,
+        "supported_solution": false,
+        "solution": [
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:40:26.748447+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "x<=td"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "x<=SA"
+            },
+            {
+                "location_id": "id6",
+                "clock_constraint": "z<=TRTT"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id5",
+                "target_id": "id7",
+                "clock_constraint": "z>=TRTT"
+            }
+        ],
+        "depth": 10,
+        "supported_solution": false,
+        "solution": [
+            [
+                0.0,
+                20.0,
+                100.0,
+                0.0,
+                "inf"
+            ]
+        ]
+    }
+]

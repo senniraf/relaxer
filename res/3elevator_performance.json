@@ -1,0 +1,25 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/3elevator.xml"
+            },
+            "relax_all": true,
+            "depth": 3
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/3elevator_performance.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/3elevator_performance.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

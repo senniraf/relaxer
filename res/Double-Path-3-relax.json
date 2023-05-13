@@ -1,0 +1,41 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/Double-Path-3-relax.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "c <= 1"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "d <= 2"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id0",
+                    "target_id": "id2",
+                    "clock_constraint": "a >= 2"
+                }
+            ],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/Double-Path-3-relax.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/Double-Path-3-relax.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

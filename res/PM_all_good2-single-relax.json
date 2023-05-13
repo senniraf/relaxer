@@ -1,0 +1,26 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/PM_all_good2.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id16",
+                    "clock_constraint": "t<=TPVARP"
+                }
+            ],
+            "depth": 9
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/PM_all_good2.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/PM_all_good2.stats.json"
+    },
+    "debug": false
+}

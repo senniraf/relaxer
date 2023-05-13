@@ -1,0 +1,25 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "relax_all": true,
+            "depth": 4
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/tartar_cav20.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/tartar_cav20.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

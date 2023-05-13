@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>broadcast chan callC50,callC150,callC200,idle,reC50,reC150,reC200;
+
+//worst case execution time of the cyclic functions
+int wcetC50 = 7;
+int wcetC150 = 10;
+int wcetC200 = 7;
+
+//best case execution time
+int bcetC50 = 5;
+int bcetC150 = 5;
+int bcetC200 = 5;
+
+//deadline of the cyclic functions are 30 units (e.g. cyclic50 is executed after 50 units, deadline is 80, 80-50=30)
+int deadlineC50 = 80;
+int deadlineC150 = 180;
+int deadlineC200 = 230;
+
+//cyclic call intervall
+int intervallC50 = 50;
+int intervallC150 = 150;
+int intervallC200 = 200;
+
+//system clock
+clock sysclk;
+//cyclic clock that coordinates the scheduling
+clock cycclk;</declaration>
+	<template>
+		<name x="5" y="5">Cyclic50</name>
+		<declaration>clock t;</declaration>
+		<location id="id0" x="-80" y="-112">
+			<label kind="invariant" x="-192" y="-120">t&lt;=wcetC50</label>
+		</location>
+		<location id="id1" x="16" y="-184">
+			<name x="6" y="-230">cyclic50_run</name>
+			<label kind="invariant" x="6" y="-214">t&lt;=wcetC50</label>
+		</location>
+		<location id="id2" x="16" y="-40">
+			<name x="8" y="-24">cyclic50_idle</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="synchronisation" x="-72" y="-80">idle!</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-92" y="-178">t&gt;bcetC50</label>
+			<label kind="synchronisation" x="-92" y="-163">reC50!</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="40" y="-128">callC50?</label>
+			<label kind="assignment" x="40" y="-112">t=0</label>
+			<nail x="16" y="-112"/>
+		</transition>
+	</template>
+	<template>
+		<name>Cyclic150</name>
+		<declaration>clock t;</declaration>
+		<location id="id3" x="-104" y="-72">
+			<label kind="invariant" x="-216" y="-80">t&lt;=wcetC150</label>
+		</location>
+		<location id="id4" x="0" y="-152">
+			<name x="-16" y="-200">cyclic150_run</name>
+			<label kind="invariant" x="-16" y="-184">t&lt;=wcetC150</label>
+		</location>
+		<location id="id5" x="0" y="0">
+			<name x="-8" y="16">cyclic150_idle</name>
+		</location>
+		<init ref="id5"/>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="-112" y="-51">idle!</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-112" y="-142">t&gt;bcetC150</label>
+			<label kind="synchronisation" x="-112" y="-127">reC150!</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id4"/>
+			<label kind="synchronisation" x="32" y="-88">callC150?</label>
+			<label kind="assignment" x="32" y="-72">t=0</label>
+			<nail x="0" y="-72"/>
+		</transition>
+	</template>
+	<template>
+		<name>Cyclic200</name>
+		<declaration>clock t;</declaration>
+		<location id="id6" x="-120" y="-72">
+			<label kind="invariant" x="-195" y="-51">t&lt;=wcetC200</label>
+		</location>
+		<location id="id7" x="2" y="-146">
+			<name x="-8" y="-200">cyclic200_run</name>
+			<label kind="invariant" x="-8" y="-184">t&lt;=wcetC200</label>
+		</location>
+		<location id="id8" x="0" y="0">
+			<name x="-8" y="16">cyclic200_idle</name>
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id8"/>
+			<label kind="synchronisation" x="-178" y="-85">idle!</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-119" y="-139">t&gt;bcetC200</label>
+			<label kind="synchronisation" x="-119" y="-124">reC200!</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="40" y="-88">callC200?</label>
+			<label kind="assignment" x="40" y="-72">t=0</label>
+			<nail x="0" y="-72"/>
+		</transition>
+	</template>
+	<template>
+		<name>Processor</name>
+		<declaration>clock cycclk50;
+clock cycclk150;
+clock cycclk200;</declaration>
+		<location id="id9" x="-136" y="-59">
+			<label kind="invariant" x="-620" y="-102">cycclk50&lt;=intervallC50 &amp;&amp; cycclk150&lt;=intervallC150 &amp;&amp; cycclk200&lt;=intervallC200</label>
+		</location>
+		<location id="id10" x="104" y="104">
+			<name x="94" y="74">processor_run_c200</name>
+		</location>
+		<location id="id11" x="144" y="-72">
+			<name x="134" y="-102">processor_run_c150</name>
+		</location>
+		<location id="id12" x="0" y="-152">
+			<name x="-10" y="-182">processor_run_c50</name>
+		</location>
+		<location id="id13" x="0" y="0">
+			<name x="-96" y="24">processor_idle</name>
+			<urgent/>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id13"/>
+			<nail x="-76" y="-17"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id9"/>
+			<nail x="-59" y="-42"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="88" y="32">idle?</label>
+			<label kind="assignment" x="88" y="48">cycclk200=0</label>
+			<nail x="72" y="32"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id10"/>
+			<label kind="guard" x="-32" y="72">cycclk200&gt;=200</label>
+			<label kind="synchronisation" x="-32" y="56">callC200!</label>
+			<nail x="40" y="64"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="64" y="-80">idle?</label>
+			<label kind="assignment" x="16" y="-64">cycclk150=0</label>
+			<nail x="72" y="-56"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id11"/>
+			<label kind="guard" x="72" y="0">cycclk150&gt;=150</label>
+			<label kind="synchronisation" x="72" y="-16">callC150!</label>
+			<nail x="80" y="-24"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="guard" x="24" y="-128">cycclk50&gt;=50</label>
+			<label kind="synchronisation" x="24" y="-112">callC50!</label>
+			<nail x="24" y="-80"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="-56" y="-104">idle?</label>
+			<label kind="assignment" x="-104" y="-88">cycclk50=0</label>
+			<nail x="-24" y="-80"/>
+		</transition>
+	</template>
+	<template>
+		<name>Feature</name>
+		<location id="id14" x="696" y="0">
+			<name x="686" y="-30">feature_deploy</name>
+		</location>
+		<location id="id15" x="592" y="0">
+			<name x="582" y="-30">feature_s5</name>
+		</location>
+		<location id="id16" x="480" y="0">
+			<name x="470" y="-30">feature_s4</name>
+		</location>
+		<location id="id17" x="368" y="0">
+			<name x="358" y="-30">feature_s3</name>
+		</location>
+		<location id="id18" x="248" y="0">
+			<name x="238" y="-30">feature_s2</name>
+		</location>
+		<location id="id19" x="128" y="0">
+			<name x="118" y="-30">feature_s1</name>
+		</location>
+		<location id="id20" x="0" y="0">
+			<name x="-10" y="-30">feature_init</name>
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id14"/>
+			<label kind="synchronisation" x="616" y="8">reC150?</label>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="504" y="8">reC200?</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+			<label kind="synchronisation" x="400" y="8">reC50?</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id17"/>
+			<label kind="synchronisation" x="280" y="8">reC50?</label>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="synchronisation" x="160" y="8">reC50?</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id19"/>
+		</transition>
+	</template>
+	<system>//callC syncs the processor and the cyclic functions
+//reC syncs the feature and the cyclic functions
+
+
+// cyclic functions that are called by the processor 
+C50 = Cyclic50();
+C150 = Cyclic150();
+C200 = Cyclic200();
+
+//the scheduler
+P0 = Processor();
+//the airbag feature
+Fea = Feature();
+
+// All together
+system C50,C150,C200,P0,Fea;</system>
+	<queries>
+		<query>
+			<formula>A[] (P0.cycclk50&lt;80)&amp;&amp;(P0.cycclk150&lt;180)&amp;&amp;(P0.cycclk200&lt;230)
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="9" y="9">Template</name>
+		<declaration>// Place local declarations here.
+
+clock a, b, c, d, e, x;</declaration>
+		<location id="id0" x="-34" y="-68">
+			<name x="-44" y="-102">A</name>
+		</location>
+		<location id="id1" x="-204" y="136">
+			<name x="-195" y="93">B</name>
+			<label kind="invariant" x="-214" y="153">b &lt;= 3</label>
+		</location>
+		<location id="id2" x="136" y="136">
+			<name x="144" y="93">C</name>
+			<label kind="invariant" x="126" y="153">c &lt;= 1</label>
+		</location>
+		<location id="id3" x="136" y="-68">
+			<name x="136" y="-110">D</name>
+			<label kind="invariant" x="144" y="-59">d &lt;= 2</label>
+		</location>
+		<location id="id4" x="59" y="-127">
+			<name x="49" y="-161">E</name>
+			<label kind="invariant" x="76" y="-136">e &lt;= 2</label>
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-17" y="-110">e &gt;= 1</label>
+			<label kind="assignment" x="-16" y="-97">a := 0</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id4"/>
+			<label kind="guard" x="76" y="-110">d &gt;= 1</label>
+			<label kind="assignment" x="77" y="-97">e := 0</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-255" y="-17">b &gt;= 1</label>
+			<label kind="assignment" x="-255" y="17">a:= 0</label>
+			<nail x="-204" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id3"/>
+			<label kind="guard" x="153" y="-9">c &gt;= 1</label>
+			<label kind="assignment" x="153" y="17">d := 0</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="guard" x="0" y="42">a &gt;= 2</label>
+			<label kind="assignment" x="0" y="76">c := 0, x:= 0</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-127" y="42">a &gt;= 1</label>
+			<label kind="assignment" x="-144" y="76">b := 0, x:= 0</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Process = Template();
+// List one or more processes to be composed into a system.
+system Process;
+    </system>
+	<queries>
+		<query>
+			<formula>A[](Process.A or Process.x &lt;= 7)</formula>
+			<comment>Processing does not take more than 7 units</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock</formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>

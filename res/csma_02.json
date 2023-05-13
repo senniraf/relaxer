@@ -1,0 +1,25 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/csma_02.xml"
+            },
+            "relax_all": true,
+            "depth": 9
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/csma_02.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/csma_02.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

@@ -1,0 +1,14 @@
+# VS Code IDE
+.vscode
+
+# PyCharm
+.idea
+
+# Pycache
+__pycache__
+
+# Output directory
+out/
+
+# Environment variables
+.env

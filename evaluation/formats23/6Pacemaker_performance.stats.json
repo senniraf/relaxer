@@ -1,0 +1,40 @@
+[
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:37:13.689605+00:00",
+        "total_tg_and_qe_runtime_s": 1.013704409999999,
+        "trace_generation_method": "DFS",
+        "quantifier_elimination_method": "MATHSAT Fourier-Motzkin",
+        "trace_generation_runtime_s": 0.05408542199999822,
+        "processing_runtime_s": 0.6246326599999978,
+        "quantifier_elimination_runtime_s": 0.33342745599999546,
+        "number_of_traces": 35,
+        "num_relaxations": 19,
+        "num_terms": 1,
+        "optimization_runtime_s": 0.0073057730000005705,
+        "supported_optima": true,
+        "optimization_method": "CDD",
+        "depth": 3,
+        "grid_points": 2,
+        "num_solutions": 1
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:37:21.107049+00:00",
+        "total_tg_and_qe_runtime_s": 4.2840742469999995,
+        "trace_generation_method": "DFS",
+        "quantifier_elimination_method": "MATHSAT Fourier-Motzkin",
+        "trace_generation_runtime_s": 0.1921289650000091,
+        "processing_runtime_s": 2.7092269260000315,
+        "quantifier_elimination_runtime_s": 1.3600331280000368,
+        "number_of_traces": 117,
+        "num_relaxations": 19,
+        "num_terms": 105,
+        "optimization_runtime_s": 0.4227952809999991,
+        "supported_optima": false,
+        "optimization_method": "CDD",
+        "depth": 4,
+        "grid_points": 2,
+        "num_solutions": 3
+    }
+]

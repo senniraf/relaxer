@@ -1,0 +1,269 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 4
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 5
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 6
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 7
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 8
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 9
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/8FDDI.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id0",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<=td"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=SA"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "z<=TRTT"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id5",
+                    "target_id": "id7",
+                    "clock_constraint": "z>=TRTT"
+                }
+            ],
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/8FDDI_quality.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/8FDDI_quality.stats.json"
+    },
+    "debug": false
+}

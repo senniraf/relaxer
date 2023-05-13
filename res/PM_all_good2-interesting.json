@@ -1,0 +1,38 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/PM_all_good2.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id1",
+                    "clock_constraint": "clk<=TURI"
+                },
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "t<=TAVI"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "t<=TLRI-TAVI"
+                }
+            ],
+            "depth": 6
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/PM_all_good2.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/PM_all_good2.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 4
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 5
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 6
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 7
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 8
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 9
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/4viking.xml"
+            },
+            "relax_all": true,
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/4viking_performance.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/4viking_performance.stats.json"
+    },
+    "debug": false
+}

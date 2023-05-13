@@ -1,0 +1,146 @@
+[
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:43:58.636542+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 3,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:43:59.789368+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 4,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:44:01.834695+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 5,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:44:07.931056+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 6,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:44:32.859092+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 7,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:46:03.430621+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 8,
+        "supported_solution": true,
+        "solution": [
+            [
+                0.0
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T15:50:46.282856+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 9,
+        "supported_solution": true,
+        "solution": [
+            [
+                0.0
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/4viking.xml",
+        "timestamp": "2023-05-11T16:06:10.360370+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id19",
+                "clock_constraint": "time<=60"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 10,
+        "supported_solution": true,
+        "solution": [
+            [
+                0.0
+            ]
+        ]
+    }
+]

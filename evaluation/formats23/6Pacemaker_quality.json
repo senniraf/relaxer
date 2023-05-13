@@ -1,0 +1,226 @@
+[
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:43:27.882344+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 3,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:43:31.927319+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 4,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:43:37.985733+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 5,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:43:52.952242+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 6,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:44:45.044596+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 7,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T15:48:10.353781+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 8,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T16:02:25.066696+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 9,
+        "supported_solution": true,
+        "solution": [
+            [
+                600.0,
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/6Pacemaker.xml",
+        "timestamp": "2023-05-11T16:57:07.654932+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id1",
+                "clock_constraint": "clk<=TURI"
+            },
+            {
+                "location_id": "id2",
+                "clock_constraint": "t<=TAVI"
+            },
+            {
+                "location_id": "id5",
+                "clock_constraint": "t<=TLRI-TAVI"
+            }
+        ],
+        "guard_relaxations": [],
+        "depth": 10,
+        "supported_solution": true,
+        "solution": [
+            [
+                600.0,
+                0.0,
+                0.0
+            ]
+        ]
+    }
+]

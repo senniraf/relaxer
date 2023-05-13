@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pysmt = "*"
+scipy = "*"
+uppyyl-simulator = {editable = true, ref = "relaxer-api", git = "https://github.com/senniraf/uppyyl-simulator.git"}
+gurobipy = "*"
+pyaugmecon = "*"
+pycddlib = "*"
+
+[dev-packages]
+black = "*"
+ipykernel = "*"
+pandas = "*"
+matplotlib = "*"
+
+[requires]
+python_version = "3.9"

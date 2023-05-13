@@ -1,0 +1,81 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 4
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 5
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 6
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 7
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 8
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 9
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "res/models/1repairedDB2.xml"
+            },
+            "relax_all": true,
+            "depth": 10
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/1repairedDB2_performance.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/1repairedDB2_performance.stats.json"
+    },
+    "debug": false,
+    "dump": {
+        "type": "directory",
+        "path": "out/dump"
+    }
+}

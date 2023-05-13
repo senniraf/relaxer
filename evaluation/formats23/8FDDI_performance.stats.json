@@ -1,0 +1,21 @@
+[
+    {
+        "model": "evaluation/models/8FDDI.xml",
+        "timestamp": "2023-05-11T15:39:54.122769+00:00",
+        "total_tg_and_qe_runtime_s": 0.39546958399999976,
+        "trace_generation_method": "DFS",
+        "quantifier_elimination_method": "MATHSAT Fourier-Motzkin",
+        "trace_generation_runtime_s": 0.0044227899999986775,
+        "processing_runtime_s": 0.22045899599999874,
+        "quantifier_elimination_runtime_s": 0.1682002969999985,
+        "number_of_traces": 5,
+        "num_relaxations": 28,
+        "num_terms": 8,
+        "optimization_runtime_s": 0.2248589980000002,
+        "supported_optima": false,
+        "optimization_method": "CDD",
+        "depth": 3,
+        "grid_points": 2,
+        "num_solutions": 24
+    }
+]

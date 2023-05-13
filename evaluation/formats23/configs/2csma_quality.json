@@ -1,0 +1,173 @@
+{
+    "inputs": [
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/2csma.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<26"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "x<=0"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=808"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "location_id": "id8",
+                    "clock_constraint": "x<=808"
+                },
+                {
+                    "location_id": "id9",
+                    "clock_constraint": "x<52"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id2",
+                    "clock_constraint": "x<26"
+                },
+                {
+                    "source_id": "id2",
+                    "target_id": "id3",
+                    "clock_constraint": "x<26"
+                },
+                {
+                    "source_id": "id3",
+                    "target_id": "id0",
+                    "clock_constraint": "x<=0"
+                },
+                {
+                    "source_id": "id5",
+                    "target_id": "id6",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id6",
+                    "target_id": "id5",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id6",
+                    "target_id": "id6",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id8",
+                    "target_id": "id9",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id9",
+                    "target_id": "id8",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id9",
+                    "target_id": "id9",
+                    "clock_constraint": "x<52"
+                }
+            ],
+            "depth": 3
+        },
+        {
+            "type": "UPPAAL",
+            "model": {
+                "path": "evaluation/models/2csma.xml"
+            },
+            "invariant_relaxations": [
+                {
+                    "location_id": "id2",
+                    "clock_constraint": "x<26"
+                },
+                {
+                    "location_id": "id3",
+                    "clock_constraint": "x<=0"
+                },
+                {
+                    "location_id": "id5",
+                    "clock_constraint": "x<=808"
+                },
+                {
+                    "location_id": "id6",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "location_id": "id8",
+                    "clock_constraint": "x<=808"
+                },
+                {
+                    "location_id": "id9",
+                    "clock_constraint": "x<52"
+                }
+            ],
+            "guard_relaxations": [
+                {
+                    "source_id": "id1",
+                    "target_id": "id2",
+                    "clock_constraint": "x<26"
+                },
+                {
+                    "source_id": "id2",
+                    "target_id": "id3",
+                    "clock_constraint": "x<26"
+                },
+                {
+                    "source_id": "id3",
+                    "target_id": "id0",
+                    "clock_constraint": "x<=0"
+                },
+                {
+                    "source_id": "id5",
+                    "target_id": "id6",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id6",
+                    "target_id": "id5",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id6",
+                    "target_id": "id6",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id8",
+                    "target_id": "id9",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id9",
+                    "target_id": "id8",
+                    "clock_constraint": "x<52"
+                },
+                {
+                    "source_id": "id9",
+                    "target_id": "id9",
+                    "clock_constraint": "x<52"
+                }
+            ],
+            "depth": 4
+        }
+    ],
+    "output": {
+        "type": "file",
+        "path": "out/2csma_quality.json"
+    },
+    "stats": {
+        "type": "json",
+        "path": "out/2csma_quality.stats.json"
+    },
+    "debug": false
+}

@@ -1,0 +1,418 @@
+[
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:42:19.228516+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 3,
+        "supported_solution": true,
+        "solution": [
+            [
+                "inf",
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:42:20.854247+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 4,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:42:23.574285+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 5,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:42:29.350257+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 6,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:42:40.572531+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 7,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:43:05.241144+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 8,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:43:59.784733+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 9,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    },
+    {
+        "model": "evaluation/models/7SBR.xml",
+        "timestamp": "2023-05-11T15:45:54.926554+00:00",
+        "invariant_relaxations": [
+            {
+                "location_id": "id0",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id1",
+                "clock_constraint": "t<=wcetC50"
+            },
+            {
+                "location_id": "id3",
+                "clock_constraint": "t<=wcetC150"
+            },
+            {
+                "location_id": "id4",
+                "clock_constraint": "t<=wcetC150"
+            }
+        ],
+        "guard_relaxations": [
+            {
+                "source_id": "id1",
+                "target_id": "id0",
+                "clock_constraint": "t>bcetC50"
+            },
+            {
+                "source_id": "id4",
+                "target_id": "id3",
+                "clock_constraint": "t>bcetC150"
+            },
+            {
+                "source_id": "id7",
+                "target_id": "id6",
+                "clock_constraint": "t>bcetC200"
+            }
+        ],
+        "depth": 10,
+        "supported_solution": true,
+        "solution": [
+            [
+                22.9,
+                22.9,
+                "inf",
+                "inf",
+                "inf",
+                "inf",
+                "inf"
+            ]
+        ]
+    }
+]
